@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowers for You ♡</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="decoration decoration-one">❧</div>
+    <div class="decoration decoration-two">❧</div>
+    <div class="decoration decoration-three">✧</div>
+
+    <!-- FIRST SCREEN: FLOWERS -->
+    <section id="homeScreen" class="screen active">
+
+        <p class="eyebrow">A little something for you</p>
+
+        <h1 class="main-title">Flowers for you</h1>
+
+        <p class="subtitle">A bouquet, with all my love ♡</p>
+
+        <div class="bouquet-frame">
+            <img
+                src="images/flowers.png"
+                alt="A bouquet of flowers"
+                class="bouquet-image"
+                id="bouquetImage"
+            >
+        </div>
+
+        <button class="main-button" id="continueButton">
+            Click to continue ♡
+        </button>
+
+        <p class="small-note">Made with love, just for you.</p>
+
+    </section>
+
+
+    <!-- SECOND SCREEN: ENVELOPE -->
+    <section id="envelopeScreen" class="screen">
+
+        <p class="eyebrow">Something from my heart</p>
+
+        <h2 class="main-title envelope-title">A letter for you</h2>
+
+        <p class="subtitle">There's something I'd like you to read...</p>
+
+        <div class="envelope-container">
+
+            <div class="envelope" id="envelope">
+
+                <div class="envelope-back"></div>
+
+                <div class="letter-preview">
+                    <span>For you ♡</span>
+                </div>
+
+                <div class="envelope-left"></div>
+                <div class="envelope-right"></div>
+                <div class="envelope-front"></div>
+                <div class="envelope-flap"></div>
+
+                <div class="wax-seal">♡</div>
+
+            </div>
+
+        </div>
+
+        <p id="envelopeHint" class="envelope-hint">
+            Tap the envelope to open your letter ♡
+        </p>
+
+        <button class="text-button" id="backToFlowers">
+            ← Back to the flowers
+        </button>
+
+    </section>
+
+
+    <!-- THIRD SCREEN: LETTER -->
+    <section id="letterScreen" class="screen">
+
+        <article class="letter-paper">
+
+            <div class="letter-decoration">✧ ❀ ✧</div>
+
+            <!-- EDIT YOUR GREETING -->
+            <h2 class="letter-heading">
+                To my favorite person
+            </h2>
+
+            <!-- EDIT YOUR LETTER -->
+            <div class="letter-body">
+Hi, my pretty love. 
+
+Hindi talaga papatalo at may letter din ako e HAHAAHAAH. miss na miss na miss ko na ikaw. I have to ask you something din…
+
+may I court you, sweetheart?
+
+I want to court you. Not to push you to enter a relationship with me but to show and make you feel how sincere I am and how genuine my feelings are. I know kitang kita mo na kung anong intensiyon ko at alam mo na rin kung gaano kita kamahal. Still, you deserve to pursue in a proper way. I know hindi pa ikaw ready mag commit, but my intention in courting you is not to force you into something that you are still not ready for. I hope you don’t think that because I’m willing to wait, you have to promise me something in return. Again, just take your time. Walang kahit anong pressure.
+
+kapag dumating yung time na ready ka na, I’ll be the first and last person you’ll settle with. Ako ang magiging tahanan mo hanggang dulo and I assure you, you’ll always safe here. 
+
+I love you so much and I always will.♡
+            </div>
+
+            <!-- EDIT YOUR SIGNATURE -->
+            <p class="letter-signature">
+                With all my love ♡
+            </p>
+
+        
+
+        </article>
+
+        <div class="letter-buttons">
+
+            <button class="main-button" id="saveButton">
+                Save my letter
+            </button>
+
+            <button class="outline-button" id="downloadButton">
+                Download letter
+            </button>
+
+            <button class="outline-button" id="restartButton">
+                Read it again ♡
+            </button>
+
+        </div>
+
+        <p class="footer">Written with love, meant for you. ❀</p>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

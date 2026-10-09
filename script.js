@@ -68,27 +68,28 @@ envelope.addEventListener("click", function() {
 });
 
 
-// Upload a personal flower image
-flowerUpload.addEventListener("change", function(event) {
-    const file = event.target.files[0];
 
-    if (!file) {
-        return;
-    }
+ // Upload a personal flower image (optional)
+if (flowerUpload && bouquetImage) {
+    flowerUpload.addEventListener("change", function(event) {
+        const file = event.target.files[0];
 
-    if (!file.type.startsWith("image/")) {
-        alert("Please choose a valid image.");
-        return;
-    }
+        if (!file) return;
 
-    if (flowerImageURL) {
-        URL.revokeObjectURL(flowerImageURL);
-    }
+        if (!file.type.startsWith("image/")) {
+            alert("Please choose a valid image.");
+            return;
+        }
 
-    flowerImageURL = URL.createObjectURL(file);
-    bouquetImage.src = flowerImageURL;
-    bouquetImage.style.objectFit = "contain";
-});
+        if (flowerImageURL) {
+            URL.revokeObjectURL(flowerImageURL);
+        }
+
+        flowerImageURL = URL.createObjectURL(file);
+        bouquetImage.src = flowerImageURL;
+        bouquetImage.style.objectFit = "contain";
+    });
+}
 
 
 // Save letter text in this browser
